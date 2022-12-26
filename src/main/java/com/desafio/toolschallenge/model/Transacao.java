@@ -5,9 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -17,6 +15,7 @@ import javax.persistence.Id;
 public class Transacao {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String cartao;
@@ -26,5 +25,6 @@ public class Transacao {
 
     @Embedded
     private FormaPagamento formaPagamento ;
+
 
 }
