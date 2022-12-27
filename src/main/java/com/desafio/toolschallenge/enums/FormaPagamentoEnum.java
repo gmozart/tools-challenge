@@ -1,7 +1,7 @@
-package com.desafio.toolschallenge.model.enums;
+package com.desafio.toolschallenge.enums;
 
 public enum FormaPagamentoEnum {
-    
+
     AVISTA(1,"AVISTA"),
     PARCELADO_LOJA(2,"PARCELADO LOJA"),
     PARCELADO_EMISSOR(3, "PARCELADO EMISSOR");

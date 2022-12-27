@@ -14,11 +14,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Transacao {
 
+    private String cartao;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String cartao;
 
     @Embedded
     private Descricao descricao;

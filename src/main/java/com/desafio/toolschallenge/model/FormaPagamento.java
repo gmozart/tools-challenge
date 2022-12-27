@@ -1,6 +1,6 @@
 package com.desafio.toolschallenge.model;
 
-import com.desafio.toolschallenge.model.enums.FormaPagamentoEnum;
+import com.desafio.toolschallenge.enums.FormaPagamentoEnum;
 import lombok.Data;
 
 import javax.persistence.Embeddable;

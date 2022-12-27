@@ -1,4 +1,4 @@
-package com.desafio.toolschallenge.controller;
+package com.desafio.toolschallenge.controller.transacao.request;
 
 import com.desafio.toolschallenge.dto.TransacaoDTO;
 import com.desafio.toolschallenge.service.TransacaoService;

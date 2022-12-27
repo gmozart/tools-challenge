@@ -19,7 +19,7 @@ public class Descricao {
 
     private Integer codigoAutorizacao;
 
-    private String status;
+    private Status status;
 
 
 }
