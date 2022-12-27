@@ -1,5 +1,6 @@
 package com.desafio.toolschallenge.model;
 
+import com.desafio.toolschallenge.enums.StatusEnum;
 import lombok.Data;
 
 import javax.persistence.Embeddable;
@@ -19,7 +20,7 @@ public class Descricao {
 
     private Integer codigoAutorizacao;
 
-    private Status status;
+    private StatusEnum status;
 
 
 }

@@ -15,8 +15,7 @@ public class TransacaoService {
     private final TransacaoRepository transacaoRepository;
 
 
-    public void savePagamento(TransacaoDTO transacaoDTO){
-
+    public void realizarPagamento(TransacaoDTO transacaoDTO){
         transacaoRepository.save(TransacaoDTO.of(transacaoDTO));
     }
 

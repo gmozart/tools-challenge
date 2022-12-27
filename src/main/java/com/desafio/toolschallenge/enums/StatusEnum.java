@@ -3,8 +3,8 @@ package com.desafio.toolschallenge.enums;
 public enum StatusEnum {
 
 
-    AVISTA(1,"AUTORIZADO"),
-    PARCELADO_LOJA(2,"NEGADO");
+    AUTORIZADO(1,"AUTORIZADO"),
+    NEGADO(2,"NEGADO");
 
     private final int cod;
 

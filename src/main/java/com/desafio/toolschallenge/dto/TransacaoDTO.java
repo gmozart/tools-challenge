@@ -15,16 +15,10 @@ import java.util.stream.Collectors;
 @Builder
 public class TransacaoDTO {
 
-
-    private Long id;
-
     private String cartao;
-
+    private Long id;
     private Descricao descricao;
-
     private FormaPagamento formaPagamento;
-
-
 
     public static TransacaoDTO of(Transacao transacao){
         return TransacaoDTO.builder()
@@ -51,6 +45,4 @@ public class TransacaoDTO {
     public static List<TransacaoDTO> of(List<Transacao> parkingList){
         return  parkingList.stream().map(TransacaoDTO::of).collect(Collectors.toList());
     }
-
-
 }

@@ -11,7 +11,7 @@ public class FormaPagamento {
 
     private FormaPagamentoEnum tipo;
 
-    private Integer parcela;
+    private Integer parcelas;
 
 
 }
