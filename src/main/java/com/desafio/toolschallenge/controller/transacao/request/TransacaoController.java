@@ -19,7 +19,7 @@ public class TransacaoController {
 
 
     @PostMapping
-    public ResponseEntity<TransacaoDTO> save(@RequestBody TransacaoDTO transacaoDTO){
+    public ResponseEntity<TransacaoDTO> savePagamento(@RequestBody TransacaoDTO transacaoDTO){
         transacaoService.savePagamento(transacaoDTO);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }

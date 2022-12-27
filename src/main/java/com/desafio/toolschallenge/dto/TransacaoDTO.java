@@ -28,8 +28,8 @@ public class TransacaoDTO {
 
     public static TransacaoDTO of(Transacao transacao){
         return TransacaoDTO.builder()
-                .id(transacao.getId())
                 .cartao(transacao.getCartao())
+                .id(transacao.getId())
                 .descricao(transacao.getDescricao())
                 .formaPagamento(transacao.getFormaPagamento())
                 .build();
@@ -37,8 +37,8 @@ public class TransacaoDTO {
 
     public static Transacao of(TransacaoDTO transacaoDTO){
         return Transacao.builder()
-                .id(transacaoDTO.getId())
                 .cartao(transacaoDTO.getCartao())
+                .id(transacaoDTO.getId())
                 .descricao(transacaoDTO.getDescricao())
                 .formaPagamento(transacaoDTO.getFormaPagamento())
                 .build();
@@ -51,5 +51,6 @@ public class TransacaoDTO {
     public static List<TransacaoDTO> of(List<Transacao> parkingList){
         return  parkingList.stream().map(TransacaoDTO::of).collect(Collectors.toList());
     }
+
 
 }
