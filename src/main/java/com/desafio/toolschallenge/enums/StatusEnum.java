@@ -4,23 +4,26 @@ public enum StatusEnum {
 
 
     AUTORIZADO(1,"AUTORIZADO"),
-    NEGADO(2,"NEGADO");
+    NEGADO(2,"NEGADO"),
+    CANCELADO(3,"CANCELADO");
 
-    private final int cod;
+    private int cod;
+
+    private String descricao;
 
 
-
-    private StatusEnum(int cod, String descricao){
-
+    StatusEnum(int cod, String descricao){
         this.cod = cod;
-
-
+        this.descricao = descricao;
     }
 
-    public int getCod() {
+    public Integer getCod() {
         return cod;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
 
     public static StatusEnum toEnum(Integer cod) {
 
